@@ -1,13 +1,12 @@
-import { FaSearch } from "react-icons/fa";
-
 import { debounce } from "./helpers/debounce";
 import { useHotelRoomSearch } from "./hooks/useHotelRoomSearch";
 
 import HotelRoom from "./components/HotelRoom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import hotelRooms from "./mock/properties.json";
 import Input from "./components/Input";
+
+import hotelRooms from "./mock/properties.json";
 
 function App() {
   const { filteredRooms, handleSearchKeyword } = useHotelRoomSearch(hotelRooms);
